@@ -1,22 +1,16 @@
-document.getElementById("ticketForm").addEventListener("submit", function(event) {
+// Жай анимация және хабарлама шығару
+document.querySelector("form").addEventListener("submit", function(event) {
   event.preventDefault();
-
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const ticketType = document.getElementById("ticketType").value;
-
-  const messageBox = document.getElementById("messageBox");
-  const messageText = document.getElementById("messageText");
-
-  if (name === "" || email === "" || ticketType === "") {
-    messageText.textContent = "Барлық өрістерді толтырыңыз!";
-  } else {
-    messageText.textContent = `Рахмет, ${name}! Сіз ${ticketType.toUpperCase()} билетін сәтті сатып алдыңыз! 💜`;
-  }
-
-  messageBox.style.display = "block";
+  alert("Билетті сәтті сатып алдыңыз! Концертте кездескенше!");
 });
 
-function closeMessage() {
-  document.getElementById("messageBox").style.display = "none";
-}
+// Hover кезінде карточка жарықтайды (CSS-пен бірге жұмыс істейді)
+const members = document.querySelectorAll(".member");
+members.forEach(member => {
+  member.addEventListener("mouseenter", () => {
+    member.style.boxShadow = "0 0 20px #ba68c8";
+  });
+  member.addEventListener("mouseleave", () => {
+    member.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+  });
+});

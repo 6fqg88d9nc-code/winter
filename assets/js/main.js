@@ -1,10 +1,4 @@
-// Жай анимация және хабарлама шығару
-document.querySelector("form").addEventListener("submit", function(event) {
-  event.preventDefault();
-  alert("Билетті сәтті сатып алдыңыз! Концертте кездескенше!");
-});
-
-// Hover кезінде карточка жарықтайды (CSS-пен бірге жұмыс істейді)
+// Hover кезінде карточка жарықтайды
 const members = document.querySelectorAll(".member");
 members.forEach(member => {
   member.addEventListener("mouseenter", () => {

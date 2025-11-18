@@ -1,111 +1,84 @@
 <!DOCTYPE html>
 <html lang="kk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BTS Концерті 2025</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BTS Концерті 2025</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>BTS Концерті 2025</h1>
-    <nav>
-      <a href="#basty">Басты бет</a>
-      <a href="#turaly">Топ туралы</a>
-      <a href="#bilet">Билет сатып алу</a>
-    </nav>
-  </header>
 
-  <section id="basty" class="banner">
-    <h2>Қош келдіңіз!</h2>
-    <p>2025 жылы Астанада өтетін ұлы BTS концертіне билет сатылымы басталды!</p>
-    <a href="#bilet" class="btn">Билет сатып алу</a>
-  </section>
+<header>
+  <h1>BTS Концерті 2025</h1>
+  <div class="buttons-top">
+    <button onclick="showSection('home')">Басты бет</button>
+    <button onclick="showSection('tickets')">Билеттер</button>
+    <button onclick="showSection('merch')">Мерч</button>
+  </div>
+</header>
 
-  <section id="turaly" class="about">
-    <h2>BTS тобы туралы</h2>
-    <p class="info">
-      BTS — Оңтүстік Кореядан шыққан әлемге әйгілі K-pop тобы.
-      Топ 2013 жылы BigHit Entertainment компаниясында құрылды.
-      Олардың шығармалары достық, арман және өзіңе деген сенімділік туралы.
-      2025 жылы BTS Қазақстанда алғаш рет үлкен концерт өткізбек!
-    </p>
-
-    <div class="members">
-      <!-- Жоғарғы қатар -->
-      <div class="member">
-        <img src="https://i.pinimg.com/1200x/4f/08/2d/4f082d278ee2e4d408f7b9ad2ad0c2c6.jpg" alt="RM">
-        <h3>RM (Ким Намжун)</h3>
-        <p>Топтың жетекшісі және рэпері. Өте ақылды, философиялық ән мәтіндерінің авторы.</p>
-      </div>
-
-      <div class="member">
-        <img src="https://i.pinimg.com/736x/b8/3f/a8/b83fa82d9208700cb435211edc7418d5.jpg" alt="Jin">
-        <h3>Jin (Ким Сокджин)</h3>
-        <p>Топтың вокалисі, “әлемдік көрік” деп аталады. Комедиялық мінезімен танымал.</p>
-      </div>
-
-      <div class="member">
-        <img src="https://i.pinimg.com/736x/8a/71/54/8a7154aba86c864adf53e51ab693002a.jpg" alt="Suga">
-        <h3>Suga (Мин Юнги)</h3>
-        <p>Рэпер және продюсер. Көптеген әндердің авторы және мінезі сабырлы.</p>
-      </div>
-
-      <div class="member">
-        <img src="https://i.pinimg.com/736x/fc/c3/1c/fcc31c5df894b15f8dceb76065dd8f01.jpg" alt="J-Hope">
-        <h3>J-Hope (Чон Хосок)</h3>
-        <p>Топтың би шебері және позитивтің символы. Би қойылымдарын басқарады.</p>
-      </div>
+<section id="home" class="active">
+  <div class="concert-date">Концерт 2025 жылдың 20 маусымында Астана қаласында өтеді</div>
+  <div class="members">
+    <div class="member">
+      <img src="https://i.pinimg.com/736x/07/50/9c/07509ccf0f084554cc3e0ff112b97055.jpg" alt="RM">
+      <h3>RM (Ким Намжун)</h3>
+      <p>Топтың жетекшісі және рэпері. Өте ақылды, философиялық ән мәтіндерінің авторы.</p>
     </div>
+    <!-- Басқа мүшелер осылай қосылады -->
+  </div>
+</section>
 
-    <div class="members">
-      <!-- Төменгі қатар -->
-      <div class="member">
-        <img src="https://i.pinimg.com/1200x/64/65/a2/6465a2e33014389fc2c391a3031f84d3.jpg" alt="Jimin">
-        <h3>Jimin (Пак Джимин)</h3>
-        <p>Вокалист және биші. Сахнадағы харизмасымен және эмоциялық дауысымен ерекшеленеді.</p>
-      </div>
-
-      <div class="member">
-        <img src="https://i.pinimg.com/736x/ad/b8/8a/adb88a03df309440875d3e3d5127d61d.jpg" alt="V">
-        <h3>V (Ким Тэхён)</h3>
-        <p>Терең дауыс иесі. Сәнге және актерлікке қызығады, ерекше тұлғалы.</p>
-      </div>
-
-      <div class="member">
-        <img src="https://i.pinimg.com/736x/dc/27/17/dc2717d22abedaebf9eddac1a51c5351.jpg" alt="Jungkook">
-        <h3>Jungkook (Чон Чонгук)</h3>
-        <p>Топтың ең кішісі, бірақ әмбебап талант — әнші, биші және видеооператор.</p>
-      </div>
+<section id="tickets">
+  <h2>Билеттер</h2>
+  <div class="ticket-info">
+    <div>
+      <h3>VIP Билет</h3>
+      <p>Арнайы орын және мерч кіреді.</p>
+      <a href="#">Сатып алу</a>
     </div>
-  </section>
+    <div>
+      <h3>Қалыпты Билет</h3>
+      <p>Стандартты орын.</p>
+      <a href="#">Сатып алу</a>
+    </div>
+    <div>
+      <h3>Арнайы Билет</h3>
+      <p>Сахнаға жақын орындар.</p>
+      <a href="#">Сатып алу</a>
+    </div>
+  </div>
+</section>
 
-  <section id="bilet" class="tickets">
-    <h2>Билет сатып алу</h2>
-    <p>Концерт 2025 жылдың 20 маусымында Астана қаласындағы EXPO концерт залында өтеді.</p>
-    <form>
-      <label>Аты-жөніңіз:</label>
-      <input type="text" placeholder="Атыңызды енгізіңіз" required>
+<section id="merch">
+  <h2>Мерч</h2>
+  <div class="merch-list">
+    <div class="merch-item">
+      <img src="https://i.pinimg.com/736x/9f/f8/64/9ff8643c38bc3a4195e856e472f7f2c7.jpg" alt="Футболка">
+      <h3>Футболка BTS</h3>
+      <p>Сапалы материалдан жасалған ресми футболка.</p>
+      <a href="#">Сатып алу</a>
+    </div>
+    <!-- Басқа мерч элементтері осылай қосылады -->
+  </div>
+</section>
 
-      <label>Электронды пошта:</label>
-      <input type="email" placeholder="example@gmail.com" required>
+<footer>
+  <p>© 2025 BTS Концерті. Барлық құқықтар қорғалған.</p>
+</footer>
 
-      <label>Билет түрі:</label>
-      <select required>
-        <option value="">Таңдаңыз</option>
-        <option value="standart">Стандарт – 20 000 ₸</option>
-        <option value="vip">VIP – 45 000 ₸</option>
-        <option value="premium">Premium – 70 000 ₸</option>
-      </select>
+<div id="paymentModal">
+  <div class="modal-content">
+    <span class="close" onclick="closePayment()">×</span>
+    <h3>Төлем жасау</h3>
+    <p>Картаның мәліметін енгізіңіз</p>
+    <input type="text" placeholder="Карта нөмірі"><br>
+    <input type="text" placeholder="Жарамдылық мерзімі (MM/YY)"><br>
+    <input type="text" placeholder="CVV"><br>
+    <button onclick="payTicket()">Төлеу</button>
+  </div>
+</div>
 
-      <button type="submit">Сатып алу</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>© 2025 BTS Концерті. Барлық құқықтар қорғалған.</p>
-  </footer>
-<script src="style.css"></script>
-  <script src="main.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

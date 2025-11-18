@@ -1,108 +1,91 @@
-﻿body {
-  font-family: "Segoe UI", sans-serif;
-  margin: 0;
-  background: #f5f5f5;
-  color: #222;
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
 }
 
 header {
-  background: #6a1b9a;
-  color: white;
-  text-align: center;
-  padding: 20px;
+    background: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
 }
 
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-nav a:hover {
-  text-decoration: underline;
+    header h1 {
+        margin: 0;
+    }
+
+/* Батырмалар header астында */
+.buttons-top {
+    margin-top: 15px;
 }
 
-.banner {
-  text-align: center;
-  background: url("https://i.pinimg.com/originals/35/50/07/355007ffbbf8b6e69df74e2c6e06d9a1.jpg") no-repeat center/cover;
-  color: white;
-  padding: 100px 20px;
-}
-.banner .btn {
-  background: #ff4081;
-  padding: 10px 20px;
-  border-radius: 20px;
-  color: white;
-  text-decoration: none;
-}
-.banner .btn:hover {
-  background: #f06292;
+    .buttons-top a {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 12px 25px;
+        border-radius: 25px;
+        background: #ff4081;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+
+        .buttons-top a:hover {
+            background: #f06292;
+        }
+
+.concert-date {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.about {
-  padding: 50px 20px;
-  text-align: center;
-}
-.about .info {
-  max-width: 800px;
-  margin: 0 auto 40px;
-}
 .members {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.member {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  width: 250px;
-  padding: 15px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.member img {
-  width: 100%;
-  border-radius: 10px;
-}
-.member:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-}
-.member h3 {
-  color: #6a1b9a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto 50px;
 }
 
-.tickets {
-  background: #e1bee7;
-  padding: 50px 20px;
-  text-align: center;
+.member {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    width: 250px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
 }
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-  gap: 10px;
-}
-input, select, button {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-}
-button {
-  background: #6a1b9a;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-button:hover {
-  background: #8e24aa;
-}
+
+    .member img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .member:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+
+    .member h3 {
+        color: #6a1b9a;
+        margin: 10px 0 5px;
+    }
+
+    .member p {
+        font-size: 14px;
+    }
 
 footer {
-  background: #4a148c;
-  color: white;
-  text-align: center;
-  padding: 10px;
+    background: #4a148c;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
+
